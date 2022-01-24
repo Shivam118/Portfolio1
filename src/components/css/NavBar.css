@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+body{
+    width:100vw;
+}
+.navbar{
+    background:linear-gradient(to bottom, rgba(17,17,17,0.5),transparent);
+    width:100vw;
+    font-size:20px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top:0;
+}
+.navbar .navBrand{
+    color:white;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size:2em;
+    width:35%;
+    text-align:center;
+    font-weight: 800;
+}
+.navbar .navItems{
+    width:65%;
+    padding:0px 20% 0px 10%;
+}
+.navbar .navItems ul{   
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height:100%;
+    list-style: none;
+}
+.navbar .navItems ul li a{   
+    text-decoration: none;
+    color:white;
+    font-size:1em;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight:600;
+}
+.navbar .navItems ul li a.active{
+    color:#de3940;
+    font-weight:800;
+}
+.navItemsMobile{
+    display:none;
+}
+.navItemsMobile img{
+    width:35px;
+}
+@media only screen and (max-width:768px) and (min-width:600px){
+    .navbar .navItems{
+        width:65%;
+        padding:0px 10% 0px 5%;
+    }
+}
+@media only screen and (max-width:600px){
+    .navbar{
+        background:linear-gradient(to bottom, rgba(17,17,17,0.5),transparent);
+        width:100vw;
+        font-size:20px;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top:0;
+    }
+    .navbar .navBrand{
+        color:white;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        font-size:2em;
+        width:35%;
+        text-align:center;
+        padding:0 0 0 20px;
+        font-weight: 800;
+    }
+    .navbar .navItems{
+        width:65%;
+        padding:0px 20% 0px 10%;
+    }
+    .navbar .navItems ul{   
+        display:none;
+    }
+    .navbar .navItems ul li a.active{
+        color:#de3940;
+        font-weight:800;
+        display:inline;
+    }
+    .navItemsMobile{
+        display:inline;
+        padding:1rem;
+    }
+    .navItemsMobile .MenuClose{
+        display: none;
+    }
+}
