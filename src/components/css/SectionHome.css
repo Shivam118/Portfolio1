@@ -7,15 +7,32 @@
 }
 body{
     width:100vw;
+    position: relative;
 }
 .SectionHome{
-    height:800px;
+    height:850px;
     /* background:#111; */
     background:radial-gradient(at 75% 50%,#282828 10%, #111 90%);
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index:1;
+}
+.SectionHome::before{
+    content: 'developer';
+    font-size:9rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: absolute;
+    left:4%;
+    bottom:15%;
+    color:transparent;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: rgba(68,68,68,0.4);
+    z-index:2;
+    pointer-events: none;
 }
 .homeLeft,
 .homeRight{
@@ -24,6 +41,7 @@ body{
     justify-content: center;
     align-items: center;
     padding:20px;
+    z-index: 3;
 }
 .homeLeft{
     flex-direction: column;
@@ -40,7 +58,7 @@ body{
     font-size:3.4rem;
 }
 .homeLeft .intro h2{
-    font-size:2rem;
+    font-size:1.75rem;
     color:#ddd;
 }
 .homeLeft .intro input{
@@ -58,6 +76,12 @@ body{
     width:25rem;
 }
 @media only screen and (min-width:600px) and (max-width:1000px){
+    .SectionHome::before{
+        font-size:7rem;
+        -webkit-text-stroke-width: 3px;
+        left:4%;
+        bottom:12.5%;
+    }
     .homeLeft .intro h1{
         font-size:2.5rem;
         color:#CCC;
@@ -67,7 +91,7 @@ body{
         font-size:2.7rem;
     }
     .homeLeft .intro h2{
-        font-size:1.75rem;
+        font-size:1.5rem;
         color:#ccc;
     }
     .homeLeft .intro input{
@@ -84,13 +108,18 @@ body{
 }
 @media only screen and (max-width:600px){
     .SectionHome{
-        height:800px;
+        height:850px;
         /* background:#111; */
         background:radial-gradient(#282828 10%, #111 90%);
         display:flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+    }
+    .SectionHome::before{
+        font-size:3.25rem;
+        -webkit-text-stroke-width: 2px;
+        bottom:12.5%;
     }
     .homeLeft,
     .homeRight{
@@ -112,7 +141,7 @@ body{
         font-size:2.2rem;
     }
     .homeLeft .intro h2{
-        font-size:1.5rem;
+        font-size:1.25rem;
         color:#eee;
     }
     .homeLeft .intro input{

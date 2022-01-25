@@ -8,7 +8,11 @@ export default function Home(){
             <div className='homeLeft'>
                 <div className='intro'>
                     <h1>Hi, <span>I'm </span>Shivam Sharma</h1>
-                    <h2>Full Stack Developer</h2>
+                    <h2>
+                        <span>Full Stack Developer</span>
+                        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        <span>Python Developer</span>
+                    </h2>
                     <br />
                     <input type="button" value="Contact Me"></input>
                 </div>
