@@ -11,6 +11,7 @@ export default function App() {
             <Navbar />
             <Home />
             <Contact />
+            <BottomStrip />
         </div>
     )
 }
