@@ -40,8 +40,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:20px;
     z-index: 3;
+    padding:20px;
 }
 .homeLeft{
     flex-direction: column;
@@ -119,7 +119,7 @@ body{
     .SectionHome::before{
         font-size:3.25rem;
         -webkit-text-stroke-width: 2px;
-        bottom:12.5%;
+        bottom:8%;
     }
     .homeLeft,
     .homeRight{

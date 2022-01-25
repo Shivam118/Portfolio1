@@ -18,7 +18,7 @@ export default function Home(){
                 </div>
             </div>
             <div className='homeRight'>
-                <img src={Profile} Alt="ProfilePhoto"/>
+                <img src={Profile} alt="ProfilePhoto"/>
             </div>
         </div>
     )

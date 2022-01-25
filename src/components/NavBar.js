@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './css/NavBar.css';
 import Square from '../logo/square.png';
 import Close from '../logo/close.png';
 
 export default function Navbar(){
-    const [navbarOpen, setNavbarOpen] = useState(false);
-
     function Menu(){
     }
     return(
@@ -23,8 +21,8 @@ export default function Navbar(){
                     </ul>
                 </div>
                 <div className='navItemsMobile'>
-                    <img src={Square} Alt="Menu" id="MenuClose" className='MenuOpen active' onClick={Menu()}/>
-                    <img src={Close} Alt="Menu Close" id="MenuOpen" className='MenuClose' onClick={Menu()}/>
+                    <img src={Square} alt="Menu" id="MenuClose" className='MenuOpen active' onClick={Menu()}/>
+                    <img src={Close} alt="Menu Close" id="MenuOpen" className='MenuClose' onClick={Menu()}/>
                     <div >
                     </div>
 
