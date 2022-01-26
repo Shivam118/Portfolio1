@@ -2,7 +2,10 @@ import React from "react";
 import Navbar from "./NavBar";
 import Home from "./SectionHome";
 import Contact from "./SectionContact";
+import About from "./SectionAbout";
+// import Project from "./SectionProject";
 import BottomStrip from "./BottomStrip";
+import Social from "./SocialMedia";
 import './css/App.css';
 
 export default function App() {
@@ -10,8 +13,8 @@ export default function App() {
         <div>
             <Navbar />
             <Home />
+            <About />
             <Contact />
-            <BottomStrip />
         </div>
     )
 }
