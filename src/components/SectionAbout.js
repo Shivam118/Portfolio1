@@ -26,8 +26,8 @@ export default function About() {
             <br />
             <br />
             <span>
-              I am active across various communities on Twitter and
-              StackOverflow.
+              I am active across various communities on <a href="https://www.twitter.com/shushant121212">Twitter</a> and <a href="https://stackoverflow.com/users/14368652/shivam-sharma">
+              StackOverflow</a>.
             </span>
           </p>
           <span className="social">
