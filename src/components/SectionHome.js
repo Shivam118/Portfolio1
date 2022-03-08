@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/SectionHome.css';
-import Profile from '../ProfilePhoto.webp';
+import Profile from './ProfilePhoto.webp';
 
 export default function Home(){
     return(
